@@ -2,8 +2,8 @@ cmake_minimum_required(VERSION 3.14.5)
 project(Fibonacci VERSION 0.1.0)
 include(FetchContent)
 
-# C++-14
-set(CMAKE_CXX_STANDARD 14)
+# C++-17
+set(CMAKE_CXX_STANDARD 17)
 
 # Add dependency on googletest
 # CMake will automatically download and compile it
