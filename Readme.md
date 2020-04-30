@@ -12,6 +12,8 @@ If you're using VS Code, you'll need the [CMakeTools] and the [TestAdapter] exte
 
 **Finally**: Go over to the **Run** menu to run the program in the debugger, or the **Test** menu to run your tests. 
 
+For more info check out the CMake Tools VSCode Extension [help](https://vector-of-bool.github.io/docs/vscode-cmake-tools/index.html)
+
 ### Helpful Hints
 *Note: not tested on Linux, if you're using g++/gdb, you'll probably need to remove the **"MIMode": "lldb"** from [launch.json](./.vscode/launch.json). (For some reason it won't run lldb otherwise)
 
