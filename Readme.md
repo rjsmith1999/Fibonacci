@@ -13,7 +13,7 @@ If you're using VS Code, you'll need the [CMakeTools] and the [TestAdapter] exte
 **Finally**: Go over to the **Run** menu to run the program in the debugger, or the **Test** menu to run your tests. 
 
 ### Helpful Hints
-*Note: not tested on Linux, if you're using g++/gdb, you'll proably need to remove the **"MIMode": "lldb"** from [launch.json](./.vscode/launch.json). (For some reason it won't l)
+*Note: not tested on Linux, if you're using g++/gdb, you'll proably need to remove the **"MIMode": "lldb"** from [launch.json](./.vscode/launch.json). (For some reason it won't run lldb otherwise)
 
 In [src/CMakeLists.txt](./src/CMakeLists.txt) there is a line where you'll need to put all the source files and headers you want CMake to compile. Make sure you update this when you add files or change filenames. In don't worry about doing the same for the *test* folder, it will find every file that ends in **-tests.cpp** just make sure you run **CMake: Configure** when you add a new test *file*.
 
