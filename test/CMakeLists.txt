@@ -6,7 +6,7 @@ file(GLOB_RECURSE TEST_SOURCES LIST_DIRECTORIES false *tests.cpp)
 set(SOURCES ${TEST_SOURCES})
 
 # tell CMake to compile our tests as an executable
-add_executable(${BINARY} ${TEST_SOURCES} main.cpp)
+add_executable(${BINARY} ${TEST_SOURCES})
 
 # link our test runner executable to GoogleTest and our source library
-target_link_libraries(${BINARY} PUBLIC ${CMAKE_PROJECT_NAME}_lib gtest)
+target_link_libraries(${BINARY} PUBLIC ${CMAKE_PROJECT_NAME}_lib gtest_main)
