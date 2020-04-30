@@ -1,11 +1,12 @@
 # shortcut to get our project name in the ${BINARY} variable
 set(BINARY ${CMAKE_PROJECT_NAME})
 
-# set all the .h and .cpp files in cwd to be sources to compile
-file(GLOB_RECURSE SOURCES LIST_DIRECTORIES true *.h *.cpp)
-set(SOURCES ${SOURCES})
+# collect all source files in SOURCES variable
+set(SOURCES Fibonacci.h Fibonacci.cpp)
 
-# tell CMake to compile our source files
-add_executable(${BINARY}_run ${SOURCES})
-# tell CMake to compile our source files as a library so google test can link to it
+# tell CMake to compile our source files, and main.cpp
+add_executable(${BINARY} ${SOURCES} main.cpp)
+
+# tell CMake to compile our source files as a library
+# Then Google Test can link to it
 add_library(${BINARY}_lib STATIC ${SOURCES})
