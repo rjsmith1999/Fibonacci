@@ -6,7 +6,7 @@ If you're using VS Code, you'll need the [CMakeTools] and the [TestAdapter] exte
 
 ### Getting Started
 
-**First**: Use the **CMake: Configure** command to setup CMake and download google test
+**First**: Use the **CMake: Configure** command to setup CMake and download google test. If it asks for a kit, choose the compiler you'd like to use (for my machine Clang 11.0.3 is appropriate)
 
 **Next**: Use the **CMake: Build** command or click the **Build:** button in status bar at the bottom of the window
 
